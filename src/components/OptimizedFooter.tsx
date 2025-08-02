@@ -143,10 +143,10 @@ const OptimizedFooter = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0">
             <div className="text-center lg:text-left">
               <p className="text-gray-300 text-lg">
-                © 2025 Energía Verde Wasabi SL
+                © 2025 Energía Verde Wasabi SL - CIF: B42709378
               </p>
               <p className="text-gray-400 mt-2">
-                CIF: B12345678 - Comercializadora de energía eléctrica y gas natural registrada
+                Comercializadora de energía eléctrica y gas natural registrada
               </p>
             </div>
             

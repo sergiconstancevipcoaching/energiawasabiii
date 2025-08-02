@@ -220,7 +220,7 @@ const UltraFooter = () => {
               viewport={{ once: true }}
             >
               <p className="text-gray-400 text-lg">
-                © 2024 Energía Verde Wasabi SL - CIF: B12345678
+                © 2024 Energía Verde Wasabi SL - CIF: B42709378
               </p>
               <p className="text-gray-500 mt-2">
                 Comercializadora de energía eléctrica y gas natural registrada

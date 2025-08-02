@@ -93,7 +93,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                © 2024 Energía Verde Wasabi SL - CIF: B12345678
+                © 2024 Energía Verde Wasabi SL - CIF: B42709378
               </p>
               <p className="text-gray-500 text-xs mt-1">
                 Comercializadora de energía eléctrica y gas natural registrada
