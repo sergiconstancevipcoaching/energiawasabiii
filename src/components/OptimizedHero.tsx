@@ -121,19 +121,6 @@ const OptimizedHero = () => {
               <div className="absolute -inset-16 bg-[#A8FF00]/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-1000 animate-pulse" style={{animationDelay: '0.5s'}}></div>
               
               {/* 🎆 ESTRELLAS FLOTANTES MEJORADAS */}
-              {[...Array(12)].map((_, i) => (
-                <div
-                  key={i}
-                  className="absolute w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-500 animate-bounce"
-                  style={{
-                    left: `${15 + Math.random() * 70}%`,
-                    top: `${15 + Math.random() * 70}%`,
-                    animationDelay: `${Math.random() * 1}s`
-                  }}
-                >
-                  <Star className="h-4 w-4 text-[#A8FF00] animate-pulse drop-shadow-lg" />
-                </div>
-              ))}
             </div>
           </div>
 
