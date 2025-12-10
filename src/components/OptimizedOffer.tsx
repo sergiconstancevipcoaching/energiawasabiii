@@ -8,21 +8,21 @@ const OptimizedOffer = () => {
   const offers = [
     {
       icon: <Zap className="h-12 w-12" />,
-      amount: "60",
-      symbol: "€",
-      title: "por traer tu luz",
-      description: "Incentivo por cambiar tu suministro eléctrico a energía 100% renovable certificada",
+      amount: "30",
+      symbol: "%",
+      title: "en el consumo anual por traer tu luz",
+      description: "Ahorra un 30% en tu consumo anual al cambiar tu suministro eléctrico a energía 100% renovable certificada",
       color: "from-yellow-400 to-orange-500",
-      target: 60
+      target: 30
     },
     {
       icon: <Zap className="h-12 w-12" />,
-      amount: "60",
-      symbol: "€",
-      title: "por traer tu gas",
-      description: "Incentivo adicional por contratar también nuestro suministro de gas natural",
+      amount: "30",
+      symbol: "%",
+      title: "en el consumo anual por traer tu gas",
+      description: "Ahorra un 30% adicional en tu consumo anual al contratar también nuestro suministro de gas natural",
       color: "from-blue-400 to-cyan-500",
-      target: 60
+      target: 30
     },
     {
       icon: <Building className="h-12 w-12" />,

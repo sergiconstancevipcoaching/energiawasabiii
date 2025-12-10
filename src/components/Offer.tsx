@@ -9,23 +9,23 @@ const Offer = () => {
   const offers = [
     {
       icon: <Zap className="h-10 w-10" />,
-      amount: "60",
-      symbol: "€",
-      title: "por traer tu luz",
-      description: "Solo por cambiar tu suministro eléctrico a energía verde",
+      amount: "30",
+      symbol: "%",
+      title: "en el consumo anual por traer tu luz",
+      description: "Ahorra un 30% en tu consumo anual al cambiar tu suministro eléctrico a energía verde",
       color: "from-yellow-400 to-orange-500",
       bgColor: "bg-yellow-50",
-      target: 60
+      target: 30
     },
     {
       icon: <Zap className="h-10 w-10" />,
-      amount: "60",
-      symbol: "€",
-      title: "por traer tu gas",
-      description: "Complementa con gas natural y dobla tu ahorro inicial",
+      amount: "30",
+      symbol: "%",
+      title: "en el consumo anual por traer tu gas",
+      description: "Ahorra un 30% adicional en tu consumo anual al complementar con gas natural",
       color: "from-blue-400 to-cyan-500",
       bgColor: "bg-blue-50",
-      target: 60
+      target: 30
     },
     {
       icon: <Building className="h-10 w-10" />,
@@ -50,21 +50,21 @@ const Offer = () => {
             const duration = 2000;
             const steps = 60;
             const stepTime = duration / steps;
-            
+
             let currentStep = 0;
             const timer = setInterval(() => {
               currentStep++;
               const progress = currentStep / steps;
-              
+
               setCountUp({
-                luz: Math.floor(60 * progress),
-                gas: Math.floor(60 * progress),
+                luz: Math.floor(30 * progress),
+                gas: Math.floor(30 * progress),
                 descuento: Math.floor(30 * progress)
               });
-              
+
               if (currentStep >= steps) {
                 clearInterval(timer);
-                setCountUp({ luz: 60, gas: 60, descuento: 30 });
+                setCountUp({ luz: 30, gas: 30, descuento: 30 });
               }
             }, stepTime);
           }
@@ -228,18 +228,18 @@ const Offer = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-black text-[#A8FF00] mb-2">30% descuento</div>
-                <div className="text-gray-300">Premio luz</div>
+                <div className="text-4xl font-black text-[#A8FF00] mb-2">30%</div>
+                <div className="text-gray-300">en consumo anual luz</div>
               </div>
               <div className="text-2xl text-white font-bold flex items-center justify-center">+</div>
               <div>
-                <div className="text-4xl font-black text-[#A8FF00] mb-2">30% descuento</div>
-                <div className="text-gray-300">Premio gas</div>
+                <div className="text-4xl font-black text-[#A8FF00] mb-2">30%</div>
+                <div className="text-gray-300">en consumo anual gas</div>
               </div>
             </div>
             <div className="border-t border-[#A8FF00]/30 mt-8 pt-8">
-              <div className="text-6xl font-black text-[#A8FF00] mb-4">120€</div>
-              <div className="text-xl text-white">Total en premios por cambiarte</div>
+              <div className="text-6xl font-black text-[#A8FF00] mb-4">60%</div>
+              <div className="text-xl text-white">Total de ahorro en tu consumo anual</div>
             </div>
           </div>
         </div>

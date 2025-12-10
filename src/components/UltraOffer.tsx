@@ -12,10 +12,10 @@ const UltraOffer = () => {
   const offers = [
     {
       icon: <Zap className="h-12 w-12" />,
-      amount: "60",
-      symbol: "€",
-      title: "por traer tu luz",
-      description: "Solo por cambiar tu suministro eléctrico a energía verde certificada",
+      amount: "30",
+      symbol: "%",
+      title: "en el consumo anual por traer tu luz",
+      description: "Ahorra un 30% en tu consumo anual al cambiar tu suministro eléctrico a energía verde certificada",
       color: "from-yellow-400 via-orange-500 to-red-500",
       bgColor: "from-yellow-50 to-orange-100",
       particles: 25,
@@ -23,10 +23,10 @@ const UltraOffer = () => {
     },
     {
       icon: <Zap className="h-12 w-12" />,
-      amount: "60",
-      symbol: "€",
-      title: "por traer tu gas",
-      description: "Complementa con gas natural y dobla tu ahorro inicial sin complicaciones",
+      amount: "30",
+      symbol: "%",
+      title: "en el consumo anual por traer tu gas",
+      description: "Ahorra un 30% adicional en tu consumo anual al complementar con gas natural sin complicaciones",
       color: "from-blue-400 via-cyan-500 to-teal-500",
       bgColor: "from-blue-50 to-cyan-100",
       particles: 30,
@@ -548,54 +548,54 @@ const UltraOffer = () => {
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity }}
                 >
-                  <div className="text-6xl font-black text-[#A8FF00] mb-4">30% descuento</div>
-                  <div className="text-gray-300 text-xl">Premio luz</div>
+                  <div className="text-6xl font-black text-[#A8FF00] mb-4">30%</div>
+                  <div className="text-gray-300 text-xl">en consumo anual luz</div>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="text-4xl text-white font-black flex items-center justify-center"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
                   +
                 </motion.div>
-                
+
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
                 >
-                  <div className="text-6xl font-black text-[#A8FF00] mb-4">30% descuento</div>
-                  <div className="text-gray-300 text-xl">Premio gas</div>
+                  <div className="text-6xl font-black text-[#A8FF00] mb-4">30%</div>
+                  <div className="text-gray-300 text-xl">en consumo anual gas</div>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="text-4xl text-white font-black flex items-center justify-center"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                 >
                   =
                 </motion.div>
-                
+
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity, delay: 1 }}
                 >
-                  <div className="text-6xl font-black text-[#A8FF00] mb-4">120€</div>
-                  <div className="text-gray-300 text-xl">Total premios</div>
+                  <div className="text-6xl font-black text-[#A8FF00] mb-4">60%</div>
+                  <div className="text-gray-300 text-xl">Total de ahorro</div>
                 </motion.div>
               </div>
-              
-              <motion.div 
+
+              <motion.div
                 className="border-t border-[#A8FF00]/30 pt-10"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 2, delay: 2 }}
               >
-                <motion.div 
+                <motion.div
                   className="text-8xl font-black text-[#A8FF00] mb-6"
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.05, 1],
                     textShadow: [
                       "0 0 50px rgba(168, 255, 0, 0.5)",
@@ -605,9 +605,9 @@ const UltraOffer = () => {
                   }}
                   transition={{ duration: 3, repeat: Infinity }}
                 >
-                  120€
+                  60%
                 </motion.div>
-                <div className="text-2xl text-white">Total en premios por cambiarte</div>
+                <div className="text-2xl text-white">Total de ahorro en tu consumo anual</div>
               </motion.div>
             </div>
           </div>
