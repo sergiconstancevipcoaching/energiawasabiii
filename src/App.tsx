@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import OptimizedHeader from './components/OptimizedHeader';
 import OptimizedHero from './components/OptimizedHero';
+import CookieConsent from './components/CookieConsent';
 
 // Lazy load components for better performance
 const OptimizedBenefits = lazy(() => import('./components/OptimizedBenefits'));
@@ -51,6 +52,8 @@ function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <OptimizedFooter />
       </Suspense>
+
+      <CookieConsent />
     </div>
   );
 }
