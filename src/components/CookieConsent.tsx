@@ -76,10 +76,10 @@ const CookieConsent = () => {
 
   return (
     <>
-      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[999] animate-fadeIn" />
+      <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[999] animate-fadeIn" />
 
-      <div className="fixed bottom-0 left-0 right-0 md:bottom-6 md:left-6 md:right-auto md:max-w-md z-[1000] animate-slideUp">
-        <div className="bg-gradient-to-br from-[#1A1A1A] via-[#2A2A2A] to-[#1A1A1A] border-2 border-[#A8FF00]/30 rounded-t-3xl md:rounded-3xl shadow-2xl overflow-hidden">
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-2xl z-[1000] animate-scaleIn">
+        <div className="bg-gradient-to-br from-[#1A1A1A] via-[#2A2A2A] to-[#1A1A1A] border-2 border-[#A8FF00]/30 rounded-3xl shadow-2xl overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#A8FF00] via-[#96E600] to-[#A8FF00]" />
 
           <div className="p-6 md:p-8">
@@ -249,14 +249,14 @@ const CookieConsent = () => {
           to { opacity: 1; }
         }
 
-        @keyframes slideUp {
+        @keyframes scaleIn {
           from {
             opacity: 0;
-            transform: translateY(100%);
+            transform: translate(-50%, -50%) scale(0.8);
           }
           to {
             opacity: 1;
-            transform: translateY(0);
+            transform: translate(-50%, -50%) scale(1);
           }
         }
 
@@ -264,8 +264,8 @@ const CookieConsent = () => {
           animation: fadeIn 0.3s ease-out;
         }
 
-        .animate-slideUp {
-          animation: slideUp 0.4s ease-out;
+        .animate-scaleIn {
+          animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
       `}</style>
     </>
